@@ -1,5 +1,5 @@
 import pypdf  # Import pypdf (formerly PyPDF2)
-
+import os
 def save_uploaded_file(uploaded_file):
     temp_dir = "/tmp"  # Streamlit Cloud provides access to this directory
     os.makedirs(temp_dir, exist_ok=True)  # Ensure the directory exists
