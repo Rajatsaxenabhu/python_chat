@@ -24,7 +24,7 @@ if pdf_files:
 
     # Process each uploaded PDF
     for pdf_file in pdf_files:
-        temp_pdf_path = save_uploaded_file(pdf_file)  # Save uploaded PDF to a temporary path
+        temp_pdf_path = st.file_uploader(pdf_file)  # Save uploaded PDF to a temporary path
         pdf_text = extract_text_from_pdf(temp_pdf_path)  # Extract text from PDF
         text_chunks = chunk_text(pdf_text)  # Split the text into manageable chunks
         print("phase 111")
